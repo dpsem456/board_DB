@@ -22,6 +22,7 @@ int beginRow = (currentPage-1)*pagePerRow;
 List<Board> list = boardDao.selectBoardListPerPage(beginRow, pagePerRow);
 %>
 
+
 		<div>전체행의 수 : <%=totalRowCount%>/<%=list.size()%></div>
 	<table border="1">
 		<thead>
